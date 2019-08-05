@@ -1,0 +1,430 @@
+/*====================
+Author: Satham Hussain
+Copy right @ satham
+Designed for profile login
+
+Swatch Colors
+#d3d3d3 -- lightgray
+====================*/
+
+/*==================
+resets and overrides
+====================*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
+}
+
+body * {
+	font-family: Roboto, Oxygen-sans, Ubuntu, Cantarell, "Helvitica Neue", sans-serif !important;
+}
+
+/*=============
+Links and types
+=============*/
+
+a:hover, a:visited, a:active, a:link {text-decoration: none;}
+
+a, span {display: inline-block;}
+
+/*==========
+main layouts
+==========*/
+
+header {
+	position: fixed;
+	top: 0;
+	background: blue;
+	height: 44px;
+	width: 100%;
+	z-index: 100;
+}
+
+aside {
+	position: fixed;
+	top: 44px;
+	height: 100%;
+	width: 16.66%;
+	box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+}
+
+footer {
+	position: fixed;
+	background: blue;
+	height: 44px;
+	width: 100%;
+	bottom: 0;
+	z-index: 100;
+}
+
+[class*="col-"] {
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	.col-s-1 {
+		width: 8.33%;
+	}
+	.col-s-2 {
+		width: 16.66%;
+	}
+	.col-s-3 {
+		width: 25%;
+	}
+	.col-s-4 {
+		width: 33.33%;
+	}
+	.col-s-5 {
+		width: 41.66%;
+	}
+	.col-s-6 {
+		width: 50%;
+	}
+	.col-s-7 {
+		width: 58.33%;
+	}
+	.col-s-8 {
+		width: 66.66%;
+	}
+	.col-s-9 {
+		width: 75%;
+	}
+	.col-s-10 {
+		width: 83.33%;
+	}
+	.col-s-11 {
+		width: 91.66%;
+	}
+	.col-s-12 {
+		width: 100%;
+	}
+	section {
+		position: relative;
+		width: 100%;
+		left: 0;
+		top: 0;
+		transform: none;
+	}
+	section > div {
+		display: block !important;
+	    height: auto !important;
+	    align-items: center !important;
+	    background: #ffffff !important;
+		box-shadow: 0 0 10px 10px #f3f1f1 !important; /*For all the corners*/
+	    border: 1px solid #b3b2b2 !important;
+	    border-radius: 5px !important;
+	}
+	section .alpha, section .svg {
+    	height: 281px !important;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.col-l-1 {
+		width: 8.33%;
+	}
+	.col-l-2 {
+		width: 16.66%;
+	}
+	.col-l-3 {
+		width: 25%;
+	}
+	.col-l-4 {
+		width: 33.33%;
+	}
+	.col-l-5 {
+		width: 41.66%;
+	}
+	.col-l-6 {
+		width: 50%;
+	}
+	.col-l-7 {
+		width: 58.33%;
+	}
+	.col-l-8 {
+		width: 66.66%;
+	}
+	.col-l-9 {
+		width: 75%;
+	}
+	.col-l-10 {
+		width: 83.33%;
+	}
+	.col-l-11 {
+		width: 91.66%;
+	}
+	.col-l-12 {
+		width: 100%;
+	}
+	section {
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    width: 65%;
+	}
+	section > div {
+		display: flex !important;
+	    height: auto !important;
+	    align-items: center !important;
+	    background: #ffffff !important;
+		box-shadow: 0 0 10px 10px #f3f1f1 !important; /*For all the corners*/
+	    border: 1px solid #b3b2b2 !important;
+	    border-radius: 5px !important;
+	}
+	section .alpha, section .svg {
+    	height: 500px !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-image: none !important;
+	}
+	section {
+		position: relative;
+		width: 100%;
+		left: 0;
+		top: 0;
+		transform: none;
+	}
+	section > div {
+		display: block !important;
+		height: auto !important;
+	}
+	section .alpha, section .svg {
+    	height: 281px !important;
+	}
+	.half-width {
+		width: 70% !important;
+	}
+	section .beta .social-login .google button, section .beta .social-login .fb button {
+		width: 12% !important;
+	}
+	section .beta .social-login .google button:nth-child(2), section .beta .social-login .fb button:nth-child(2) {
+		width: 50% !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+	body {
+		background-image: none !important;
+	}
+	section {
+		width: 90%;
+	}
+}
+
+/*===============
+secondary layouts
+===============*/
+body {
+	background-image: url(bg.svg);
+	background-repeat: no-repeat; 
+	background-size: 100%;
+}
+
+section > div {
+	display: flex;
+    height: 500px;
+    align-items: center;
+    background: #ffffff;
+/*  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);  */
+	box-shadow: 0 0 10px 10px #f3f1f1; /*For all the corners*/
+    border: 1px solid #b3b2b2;
+    border-radius: 5px;
+}
+
+section > div .svg {
+	width: 100%;
+	height: 500px;
+}
+
+section > div div:first-child img {
+	width: 100%;
+    height: 500px;
+}
+
+section .alpha {
+    height: 500px;
+}
+
+section .beta {
+    justify-content: space-around;
+}
+
+section .beta div > div {
+	width: 100%;
+	text-align: center;
+}
+
+section .beta .logo {
+	color: #1f3de0;
+}
+
+section .beta .logo > span {
+	font-size: 3rem;
+}
+
+section .beta .logo > sub {
+	font-size: 1rem;
+}
+
+section .beta .form div {
+	padding: 10px 0;
+}
+
+section .beta .form input {
+	height: 40px;
+    text-indent: 5px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+}
+
+section .beta .form .frgt-pswd a {
+    text-align: right;
+    font-size: 12px;
+    color: #6f6969;
+    cursor: pointer;
+}
+
+section .beta .form .submit {
+	display: flex;
+	justify-content: center;
+}
+
+section .beta .form .submit > div {
+	text-align: left;
+	width: 50%;
+}
+
+section .beta .form .divider table {
+	width: 100%;
+}
+
+section .beta .form .divider table td:nth-child(2) {
+	width: 20%;
+}
+
+section .beta .form .divider table td:not(:nth-child(2)) {
+	width: 20%;
+}
+
+section .beta .form .divider table td span {
+	font-size: 12px;
+	color: #6f6969;
+}
+
+section .beta .form .submit div input {
+	color: white;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 12px;
+	width: 40%;
+    background: #2b77c6;
+    height: 40px;
+}
+
+section .beta .social-login .google, section .beta .social-login .fb {
+	display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+section .beta .social-login .google button, section .beta .social-login .fb button {
+	height: 40px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .beta .social-login .google button {
+    background: #da0808;
+}
+
+section .beta .social-login .google button:nth-child(2), section .beta .social-login .fb button:nth-child(2) {
+	height: 40px;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    width: 40%;
+    justify-content: space-around;
+    margin-left: -2px;
+}
+
+section .beta .social-login .google svg {
+	color: white;
+    height: 25px;
+    width: 28px;
+}
+
+section .beta .social-login .fb button {
+    background: #2b77c6;
+}
+
+section .beta .social-login .fb svg {
+    color: white;
+    height: 24px;
+    width: 24px;
+}
+
+/*===========
+form elements
+===========*/
+input {
+	font-size: 80%;
+}
+label {}
+button {}
+
+/*============
+mischallaneous 
+=============*/
+.full-width {
+	width: 100%;
+}
+
+.half-width {
+	width: 50%;
+}
+
+.bottom {
+	margin-bottom: 10px;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.flex {
+	display: flex;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
