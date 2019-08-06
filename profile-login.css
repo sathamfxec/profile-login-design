@@ -210,10 +210,10 @@ footer {
 		width: 70% !important;
 	}
 	section .beta .social-login .google button, section .beta .social-login .fb button {
-		width: 12% !important;
+		width: 14% !important;
 	}
 	section .beta .social-login .google button:nth-child(2), section .beta .social-login .fb button:nth-child(2) {
-		width: 50% !important;
+		width: 52% !important;
 	}
 }
 
@@ -233,6 +233,7 @@ body {
 	background-image: url(bg.svg);
 	background-repeat: no-repeat; 
 	background-size: 100%;
+	overflow-x: hidden;
 }
 
 section > div {
@@ -313,11 +314,7 @@ section .beta .form .divider table {
 	width: 100%;
 }
 
-section .beta .form .divider table td:nth-child(2) {
-	width: 20%;
-}
-
-section .beta .form .divider table td:not(:nth-child(2)) {
+section .beta .form .divider table td {
 	width: 20%;
 }
 
@@ -347,7 +344,7 @@ section .beta .social-login .google button, section .beta .social-login .fb butt
     border-radius: 5px 0 0 5px;
     border: 1px solid #d3d3d3;
     cursor: pointer;
-    width: 10%;
+    width: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,7 +360,7 @@ section .beta .social-login .google button:nth-child(2), section .beta .social-l
     color: white;
     font-weight: 600;
     font-size: 12px;
-    width: 40%;
+    width: 45%;
     justify-content: space-around;
     margin-left: -2px;
 }
