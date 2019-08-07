@@ -213,7 +213,7 @@ footer {
 		width: 14% !important;
 	}
 	section .beta .social-login .google button:nth-child(2), section .beta .social-login .fb button:nth-child(2) {
-		width: 52% !important;
+		width: 56% !important;
 	}
 }
 
@@ -308,7 +308,7 @@ section .beta .form .submit {
 
 section .beta .form .submit > div {
 	text-align: left;
-	width: 50%;
+	width: 60%;
 }
 
 section .beta .form .divider table {
@@ -361,7 +361,7 @@ section .beta .social-login .google button:nth-child(2), section .beta .social-l
     color: white;
     font-weight: 600;
     font-size: 12px;
-    width: 45%;
+    width: 48%;
     justify-content: space-around;
     margin-left: -2px;
 }
@@ -399,7 +399,7 @@ mischallaneous
 }
 
 .half-width {
-	width: 50%;
+	width: 60%;
 }
 
 .bottom {
